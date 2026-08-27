@@ -62,7 +62,7 @@
       "kyc_optional": 9,
       "kyc_none": 24,
       "pct_kyc_required": 62,
-      "median_fee_pct": 0.99,
+      "median_fee_pct": 0.95,
       "zero_platform_fee": 19,
       "fiat_settlement": 57,
       "pct_fiat_settlement": 66,

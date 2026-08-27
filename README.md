@@ -11,7 +11,7 @@ Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current versi
 - The **median platform fee is 1%** per transaction; 10 of 50 charge a $0 platform fee.
 - **66% offer fiat settlement**; 12 of 50 support Bitcoin Lightning.
 
-The living dataset (n=86) holds at the same headline: **65% custodial, 24% non-custodial**, median fee 0.99%.
+The living dataset (n=86) holds at the same headline: **65% custodial, 24% non-custodial**, median fee 0.95%.
 
 ## Files
 
@@ -52,7 +52,11 @@ Full methodology and analysis:
 
 ## Update cadence
 
-The dataset is updated monthly: new gateways are added as they are verified, fees are re-checked against official pricing pages, and the version number and `updated` date are bumped. The 50-gateway study cohort is frozen so the published August 2026 numbers stay reproducible; growth happens in the living dataset. To regenerate `DATA.md` after editing the JSON: `python3 tools/make_markdown.py`.
+The dataset is updated monthly: new gateways are added as they are verified, fees are re-checked against official pricing pages, and the version number and `updated` date are bumped. The 50-gateway study cohort is frozen so the published August 2026 numbers stay reproducible; growth happens in the living dataset. To regenerate the CSV, `DATA.md` and summary counts after editing the JSON: `python3 tools/build.py`.
+
+## Contributing
+
+Missing gateway? Stale fee? PRs and issues are welcome — the only hard rule is that every fact must be checkable on an **official** provider page. See [CONTRIBUTING.md](CONTRIBUTING.md) for the field rules, the custody definitions, and the note for vendors editing their own row. CI validates every PR.
 
 ## License and citation
 
