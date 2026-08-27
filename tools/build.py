@@ -56,7 +56,7 @@ with (root / "data" / "crypto-payment-gateways.csv").open("w", newline="") as f:
 rows = sorted(gws, key=lambda g: (g["fee_pct"] if isinstance(g["fee_pct"], (int, float)) else 99, g["name"].lower()))
 yn = lambda v: "yes" if v else "no"
 lines = [
-    f"# {d['dataset']} — full table",
+    f"# {d['dataset']}: full table",
     "",
     f"{n} gateways, v{d['version']}, updated {d['updated']}. "
     f"License: [{d['license']}]({d['license_url']}), attribution: [Shieldz]({d['publisher_url']}). "

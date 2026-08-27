@@ -1,4 +1,4 @@
-# Crypto Payment Gateways 2026 — full table
+# Crypto Payment Gateways 2026: full table
 
 86 gateways, v1.2.0, updated 2026-08-20. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
 

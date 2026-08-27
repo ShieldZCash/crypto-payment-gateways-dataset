@@ -6,7 +6,7 @@ Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current versi
 
 ## Key findings (study cohort, n=50, August 2026)
 
-- **64% of crypto payment gateways are custodial** — the provider's wallet receives the buyer's money before the merchant gets paid. Only **24% are non-custodial**.
+- **64% of crypto payment gateways are custodial**: the provider's wallet receives the buyer's money before the merchant gets paid. Only **24% are non-custodial**.
 - **58% require merchant KYC** before you can accept a payment; 15 of 50 require none.
 - The **median platform fee is 1%** per transaction; 10 of 50 charge a $0 platform fee.
 - **66% offer fiat settlement**; 12 of 50 support Bitcoin Lightning.
@@ -46,8 +46,8 @@ Classification from provider pricing pages and docs as of August 2026. The publi
 
 Full methodology and analysis:
 
-- [50 crypto payment gateways compared](https://shieldz.cash/blog/50-crypto-payment-gateways-compared) — the study this dataset was built for
-- [The custody gap report](https://shieldz.cash/blog/custody-gap-crypto-payment-gateways) — canonical home of the dataset
+- [50 crypto payment gateways compared](https://shieldz.cash/blog/50-crypto-payment-gateways-compared): the study this dataset was built for
+- [The custody gap report](https://shieldz.cash/blog/custody-gap-crypto-payment-gateways): canonical home of the dataset
 - Stat pages: [custody split](https://shieldz.cash/blog/are-crypto-payment-gateways-custodial) · [median fee](https://shieldz.cash/blog/average-crypto-payment-gateway-fee) · [free gateways](https://shieldz.cash/blog/how-many-free-crypto-payment-gateways) · [KYC](https://shieldz.cash/blog/do-crypto-payment-gateways-require-kyc) · [fiat settlement](https://shieldz.cash/blog/crypto-payment-gateways-fiat-settlement) · [non-custodial count](https://shieldz.cash/blog/how-many-non-custodial-crypto-payment-gateways)
 
 ## Update cadence
@@ -56,12 +56,12 @@ The dataset is updated monthly: new gateways are added as they are verified, fee
 
 ## Contributing
 
-Missing gateway? Stale fee? PRs and issues are welcome — the only hard rule is that every fact must be checkable on an **official** provider page. See [CONTRIBUTING.md](CONTRIBUTING.md) for the field rules, the custody definitions, and the note for vendors editing their own row. CI validates every PR.
+Missing gateway? Stale fee? PRs and issues are welcome. The only hard rule is that every fact must be checkable on an **official** provider page. See [CONTRIBUTING.md](CONTRIBUTING.md) for the field rules, the custody definitions, and the note for vendors editing their own row. CI validates every PR.
 
 ## License and citation
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to use, share and adapt, including for AI/LLM training and retrieval, with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash). Suggested citation:
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to use, share and adapt, including for AI/LLM training and retrieval, with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash). Suggested citation:
 
-> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.2.0, 86 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset — study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared
+> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.2.0, 86 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
 
 Disclosure: Shieldz is itself a (non-custodial, $0-fee) crypto payment gateway and appears in the data like everyone else, with the same fields and sourcing rules.
