@@ -48,7 +48,8 @@ Full methodology and analysis:
 
 - [50 crypto payment gateways compared](https://shieldz.cash/blog/50-crypto-payment-gateways-compared): the study this dataset was built for
 - [The custody gap report](https://shieldz.cash/blog/custody-gap-crypto-payment-gateways): canonical home of the dataset
-- Stat pages: [custody split](https://shieldz.cash/blog/are-crypto-payment-gateways-custodial) · [median fee](https://shieldz.cash/blog/average-crypto-payment-gateway-fee) · [free gateways](https://shieldz.cash/blog/how-many-free-crypto-payment-gateways) · [KYC](https://shieldz.cash/blog/do-crypto-payment-gateways-require-kyc) · [fiat settlement](https://shieldz.cash/blog/crypto-payment-gateways-fiat-settlement) · [non-custodial count](https://shieldz.cash/blog/how-many-non-custodial-crypto-payment-gateways)
+- [The pricing transparency report](https://shieldz.cash/blog/crypto-payment-gateway-pricing-transparency): 29% of gateways publish no checkable fee, built from this dataset's verified flag
+- Stat pages: [custody split](https://shieldz.cash/blog/are-crypto-payment-gateways-custodial) · [median fee](https://shieldz.cash/blog/average-crypto-payment-gateway-fee) · [free gateways](https://shieldz.cash/blog/how-many-free-crypto-payment-gateways) · [KYC](https://shieldz.cash/blog/do-crypto-payment-gateways-require-kyc) · [fiat settlement](https://shieldz.cash/blog/crypto-payment-gateways-fiat-settlement) · [non-custodial count](https://shieldz.cash/blog/how-many-non-custodial-crypto-payment-gateways) · [fee transparency](https://shieldz.cash/blog/how-many-crypto-payment-gateways-publish-fees)
 
 ## Update cadence
 
