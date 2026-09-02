@@ -55,6 +55,10 @@ Full methodology and analysis:
 
 The dataset is updated monthly: new gateways are added as they are verified, fees are re-checked against official pricing pages, and the version number and `updated` date are bumped. The 50-gateway study cohort is frozen so the published August 2026 numbers stay reproducible; growth happens in the living dataset. To regenerate the CSV, `DATA.md` and summary counts after editing the JSON: `python3 tools/build.py`.
 
+## Independence
+
+This dataset is collected and processed independently. Every classification comes from the provider's own pricing page or documentation, every row links to its source, and derived rankings are generated from the data alone. **We do not accept paid placements, sponsored positions, link sales, or any exchange of money for how a gateway appears in this dataset or in studies built on it.** Providers have asked; the answer is no, at any price. Shieldz competes with many of the gateways listed, which is exactly why the raw data, methodology and per-row sources are public: if a row is wrong, open a pull request and it will be fixed on the evidence, not on the request.
+
 ## Contributing
 
 Missing gateway? Stale fee? PRs and issues are welcome. The only hard rule is that every fact must be checkable on an **official** provider page. See [CONTRIBUTING.md](CONTRIBUTING.md) for the field rules, the custody definitions, and the note for vendors editing their own row. CI validates every PR.
