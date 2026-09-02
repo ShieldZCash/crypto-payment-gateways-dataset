@@ -619,7 +619,7 @@
       "name": "Zaprite",
       "url": "https://zaprite.com",
       "fee_pct": 0,
-      "fee_note": "$25/mo flat; 0% platform fee",
+      "fee_note": "$25/mo; 0% on invoices, payment links and POS; 1% on API and WooCommerce (cap $15/tx)",
       "custody": "non-custodial",
       "kyc": "none",
       "coins": 2,

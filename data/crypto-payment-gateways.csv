@@ -84,4 +84,4 @@ WhiteBIT Pay,https://whitebit.com,0.5,Under half of typical acquiring; next-day 
 Whitepay,https://whitepay.com,1,1% base fee,custodial,required,200,true,false,2020,WhiteBIT-powered POS; known for Ukraine crypto donations,true,https://whitepay.com/product/crypto-acquiring,true
 XAIGATE,https://www.xaigate.com,0.2,"First 500 tx/mo free, then 0.2%",non-custodial,none,50,false,false,2023,Very low fee; WooCommerce/PrestaShop plugins,true,https://www.xaigate.com/low-fee-crypto-payment-gateway/,false
 xMoney,https://www.xmoney.com,1,1% flat with instant fiat settlement,custodial,required,10,true,false,2017,Formerly Utrust; MiCA-aligned EU crypto payments,true,https://www.xmoney.com,true
-Zaprite,https://zaprite.com,0,$25/mo flat; 0% platform fee,non-custodial,none,2,true,true,2018,Bitcoin invoicing that connects your own wallets,true,https://zaprite.com/pricing,true
+Zaprite,https://zaprite.com,0,"$25/mo; 0% on invoices, payment links and POS; 1% on API and WooCommerce (cap $15/tx)",non-custodial,none,2,true,true,2018,Bitcoin invoicing that connects your own wallets,true,https://zaprite.com/pricing,true
