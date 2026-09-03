@@ -32,7 +32,7 @@ Every row was re-checked against its official pricing page. Notable moves:
 | [`data/crypto-payment-gateways.json`](data/crypto-payment-gateways.json) | Same data plus metadata, field dictionary, methodology and summary counts |
 | [`DATA.md`](DATA.md) | The full table as markdown, sorted by fee |
 
-Live JSON/CSV endpoints (same data, always current): [shieldz.cash/data/crypto-payment-gateways-2026.json](https://shieldz.cash/data/crypto-payment-gateways-2026.json), [shieldz.cash/data/crypto-payment-gateways-2026.csv](https://shieldz.cash/data/crypto-payment-gateways-2026.csv)
+Live JSON/CSV endpoints (same data, always current): [shieldz.cash/blog/data/crypto-payment-gateways-2026.json](https://shieldz.cash/blog/data/crypto-payment-gateways-2026.json), [shieldz.cash/blog/data/crypto-payment-gateways-2026.csv](https://shieldz.cash/blog/data/crypto-payment-gateways-2026.csv)
 
 ## Fields
 
