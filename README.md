@@ -1,8 +1,8 @@
 # Crypto Payment Gateways Dataset (2026, updated monthly)
 
-An open, hand-verified dataset of **86 crypto payment gateways** classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links to the official pricing page or docs it was read from.
+An open, hand-verified dataset of **87 crypto payment gateways** classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links to the official pricing page or docs it was read from.
 
-Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.2.0, August 2026**.
+Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.3.0, September 2026**.
 
 ## Key findings (study cohort, n=50, August 2026)
 
@@ -11,7 +11,18 @@ Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current versi
 - The **median platform fee is 1%** per transaction; 10 of 50 charge a $0 platform fee.
 - **66% offer fiat settlement**; 12 of 50 support Bitcoin Lightning.
 
-The living dataset (n=86) holds at the same headline: **65% custodial, 24% non-custodial**, median fee 0.95%.
+The living dataset (n=87, September 2026) holds at the same headline: **66% custodial, 24% non-custodial**, median fee 1%.
+
+## What changed in v1.3.0 (September 2026 re-verification)
+
+Every row was re-checked against its official pricing page. Notable moves:
+
+- **NOWPayments** raised its fee from 0.5% to **1%** (1.5% multi-currency).
+- **CoinPayments** now lists **3%** for coins and tokens (was 0.5%/1%).
+- **Gate Pay** now publishes a verified **0.5%** fee; **Bitnovo Pay** verified at **0.95%**; **UniPayment** verified at **1%**; **B2BinPay** starts at **0.25%**.
+- **Helio** is now **MoonPay Commerce**; **CryptoCloud** is Trybit (1.9% standard); **CryptoChill** is now **UniWire**.
+- **Sellix** and **HoodPay** are offline behind FBI seizure notices.
+- New row: **PayRequest**. Whalestack and Loop Crypto were unreachable this cycle and are marked unverified.
 
 ## Files
 
@@ -42,7 +53,7 @@ Live JSON/CSV endpoints (same data, always current): [shieldz.cash/data/crypto-p
 
 ## Methodology
 
-Classification from provider pricing pages and docs as of August 2026. The published study (`study_cohort=true`) covers 50 gateways; the living dataset also lists additional verified gateways. Custody is an editorial classification based on each provider's own documentation. Rows where the fee could not be confirmed on an official page carry `verified=false`.
+Classification from provider pricing pages and docs, re-verified monthly (latest pass: September 2026). The published study (`study_cohort=true`) covers 50 gateways; the living dataset also lists additional verified gateways. Custody is an editorial classification based on each provider's own documentation. Rows where the fee could not be confirmed on an official page carry `verified=false`.
 
 Full methodology and analysis:
 
@@ -67,6 +78,6 @@ Missing gateway? Stale fee? PRs and issues are welcome. The only hard rule is th
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to use, share and adapt, including for AI/LLM training and retrieval, with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash). Suggested citation:
 
-> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.2.0, 86 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
+> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.3.0, 87 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
 
 Disclosure: Shieldz is itself a (non-custodial, $0-fee) crypto payment gateway and appears in the data like everyone else, with the same fields and sourcing rules.

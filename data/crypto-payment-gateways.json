@@ -1,11 +1,11 @@
 {
   "dataset": "Crypto Payment Gateways 2026",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publisher": "Shieldz",
   "publisher_url": "https://shieldz.cash",
   "canonical": "https://shieldz.cash/blog/custody-gap-crypto-payment-gateways",
   "published": "2026-08-20",
-  "updated": "2026-08-20",
+  "updated": "2026-09-03",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "methodology": "Classification of crypto payment gateways by published custody model, per-transaction fee, KYC requirement, coin coverage, fiat settlement and Lightning support, from provider pricing pages and docs as of August 2026. The published study (study_cohort=true) covers 50 gateways; this is a living dataset that also lists additional verified gateways (study_cohort=false). Rows with verified=false could not have their fee confirmed on an official page. Custody is an editorial classification based on each provider docs.",
@@ -26,9 +26,9 @@
     "study_cohort": "true = part of the published 50-gateway August 2026 study; false = additional gateway in the living dataset"
   },
   "counts": {
-    "total": 86,
+    "total": 87,
     "study_cohort": 50,
-    "additional": 36
+    "additional": 37
   },
   "summary": {
     "study_cohort": {
@@ -51,23 +51,23 @@
       "verified": 43
     },
     "full_dataset": {
-      "n": 86,
-      "custodial": 56,
+      "n": 87,
+      "custodial": 57,
       "non_custodial": 21,
       "self_hosted": 4,
       "hybrid": 5,
-      "pct_custodial": 65,
+      "pct_custodial": 66,
       "pct_non_custodial": 24,
       "kyc_required": 53,
       "kyc_optional": 9,
-      "kyc_none": 24,
-      "pct_kyc_required": 62,
-      "median_fee_pct": 0.95,
-      "zero_platform_fee": 19,
-      "fiat_settlement": 57,
-      "pct_fiat_settlement": 66,
+      "kyc_none": 25,
+      "pct_kyc_required": 61,
+      "median_fee_pct": 1.0,
+      "zero_platform_fee": 18,
+      "fiat_settlement": 60,
+      "pct_fiat_settlement": 69,
       "lightning": 16,
-      "verified": 61
+      "verified": 60
     }
   },
   "gateways": [
@@ -138,8 +138,8 @@
     {
       "name": "NOWPayments",
       "url": "https://nowpayments.io",
-      "fee_pct": 0.5,
-      "fee_note": "0.5% per transaction; volume discounts",
+      "fee_pct": 1.0,
+      "fee_note": "1% single-currency; 1.5% multi-currency; volume discounts to 0.3%",
       "custody": "non-custodial",
       "kyc": "optional",
       "coins": 350,
@@ -154,8 +154,8 @@
     {
       "name": "CoinPayments",
       "url": "https://www.coinpayments.net",
-      "fee_pct": 0.5,
-      "fee_note": "0.5% coins, 1% tokens, plus network fees",
+      "fee_pct": 3.0,
+      "fee_note": "3% for coins and tokens, plus network fees",
       "custody": "custodial",
       "kyc": "required",
       "coins": 100,
@@ -346,8 +346,8 @@
     {
       "name": "B2BinPay",
       "url": "https://b2binpay.com",
-      "fee_pct": 0.4,
-      "fee_note": "from 0.4%; 0.05% enterprise",
+      "fee_pct": 0.25,
+      "fee_note": "0.25-0.40% incoming by volume tier; 0% outgoing; enterprise from 0.05%",
       "custody": "custodial",
       "kyc": "required",
       "coins": 300,
@@ -466,8 +466,8 @@
       "settlement_fiat": true,
       "lightning": true,
       "founded": 2019,
-      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements",
-      "verified": true,
+      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements; site unreachable Sep 2026",
+      "verified": false,
       "source_url": "https://www.whalestack.com/en/pricing",
       "study_cohort": true
     },
@@ -530,8 +530,8 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2021,
-      "notable": "Crypto autopay subscriptions with Stripe integration",
-      "verified": true,
+      "notable": "Crypto autopay subscriptions with Stripe integration; site unreachable Sep 2026",
+      "verified": false,
       "source_url": "https://www.loopcrypto.xyz",
       "study_cohort": true
     },
@@ -600,19 +600,19 @@
       "study_cohort": true
     },
     {
-      "name": "Helio (MoonPay)",
-      "url": "https://www.hel.io",
+      "name": "MoonPay Commerce (ex-Helio)",
+      "url": "https://www.moonpay.com/business/commerce",
       "fee_pct": 2,
-      "fee_note": "2% standard; 1% with HelioX",
+      "fee_note": "Helio-era pricing (2%; 1% with HelioX); current fees unpublished since rebrand",
       "custody": "non-custodial",
       "kyc": "optional",
       "coins": 100,
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2022,
-      "notable": "Solana checkout leader; acquired by MoonPay",
-      "verified": true,
-      "source_url": "https://www.hel.io/pricing",
+      "notable": "Helio acquired by MoonPay, relaunched as MoonPay Commerce Oct 2025",
+      "verified": false,
+      "source_url": "https://www.moonpay.com/business/commerce",
       "study_cohort": true
     },
     {
@@ -651,7 +651,7 @@
       "name": "Speed",
       "url": "https://www.tryspeed.com",
       "fee_pct": 1,
-      "fee_note": "1% per transaction",
+      "fee_note": "1% from external wallets; 0% from Speed Wallet; 0.5% offramp",
       "custody": "custodial",
       "kyc": "optional",
       "coins": 3,
@@ -682,8 +682,8 @@
     {
       "name": "Trybit (ex-CryptoCloud)",
       "url": "https://trybit.com",
-      "fee_pct": 0.4,
-      "fee_note": "from 0.4% per transaction",
+      "fee_pct": 1.9,
+      "fee_note": "1.9% standard; negotiated from 0.4% at volume; fee can be passed to buyer",
       "custody": "custodial",
       "kyc": "required",
       "coins": 40,
@@ -691,7 +691,7 @@
       "lightning": false,
       "founded": 2021,
       "notable": "Rebranded to Trybit in 2026; auto-convert to USDT",
-      "verified": true,
+      "verified": false,
       "source_url": "https://trybit.com/",
       "study_cohort": true
     },
@@ -699,14 +699,14 @@
       "name": "Stripe (Pay with Crypto)",
       "url": "https://stripe.com/crypto",
       "fee_pct": 1.5,
-      "fee_note": "1.5% per transaction, no fixed fee",
+      "fee_note": "1.5% per transaction, no fixed fee; product renamed Stablecoin payments",
       "custody": "custodial",
       "kyc": "required",
       "coins": 3,
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2024,
-      "notable": "Stablecoin checkout settling into the Stripe balance",
+      "notable": "Renamed Stablecoin payments in 2026; USDC/USDP/USDG into the Stripe balance",
       "verified": true,
       "source_url": "https://docs.stripe.com/crypto/pay-with-crypto",
       "study_cohort": true
@@ -802,8 +802,8 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2022,
-      "notable": "No-KYC checkout favored by digital-goods sellers",
-      "verified": true,
+      "notable": "Site shows an FBI seizure notice as of Sep 2026; service discontinued",
+      "verified": false,
       "source_url": "https://hoodpay.io",
       "study_cohort": true
     },
@@ -818,7 +818,7 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2020,
-      "notable": "Digital-goods storefront platform with crypto checkout",
+      "notable": "Domain seized by the FBI in Operation Talent; offline as of Sep 2026",
       "verified": false,
       "source_url": "https://sellix.io",
       "study_cohort": true
@@ -923,11 +923,11 @@
       "name": "XAIGATE",
       "url": "https://www.xaigate.com",
       "fee_pct": 0.2,
-      "fee_note": "First 500 tx/mo free, then 0.2%",
+      "fee_note": "First 500 tx/mo free, then 0.2%; fiat off-ramps to USD/EUR",
       "custody": "non-custodial",
       "kyc": "none",
       "coins": 50,
-      "settlement_fiat": false,
+      "settlement_fiat": true,
       "lightning": false,
       "founded": 2023,
       "notable": "Very low fee; WooCommerce/PrestaShop plugins",
@@ -1130,8 +1130,8 @@
     {
       "name": "Bitnovo Pay",
       "url": "https://www.bitnovo.com/en/pay",
-      "fee_pct": 1,
-      "fee_note": "Below 1% per transaction",
+      "fee_pct": 0.95,
+      "fee_note": "From 0.95%, no extras; EUR settlement to bank account",
       "custody": "custodial",
       "kyc": "required",
       "coins": 6,
@@ -1139,7 +1139,7 @@
       "lightning": false,
       "founded": 2015,
       "notable": "Valencia-based, price locked at transaction, EUR settlement",
-      "verified": false,
+      "verified": true,
       "source_url": "https://www.bitnovo.com/en/pay",
       "study_cohort": false
     },
@@ -1226,8 +1226,8 @@
     {
       "name": "UniPayment",
       "url": "https://unipayment.io",
-      "fee_pct": 0.8,
-      "fee_note": "Low flat fee, no setup/monthly",
+      "fee_pct": 1.0,
+      "fee_note": "From 1%; no setup or monthly fee; SEPA/ACH/SWIFT payouts",
       "custody": "custodial",
       "kyc": "required",
       "coins": 30,
@@ -1235,7 +1235,7 @@
       "lightning": false,
       "founded": 2020,
       "notable": "Hybrid fiat/crypto gateway for brokers and e-commerce",
-      "verified": false,
+      "verified": true,
       "source_url": "https://unipayment.io",
       "study_cohort": false
     },
@@ -1256,19 +1256,19 @@
       "study_cohort": false
     },
     {
-      "name": "CryptoChill",
-      "url": "https://cryptochill.com",
+      "name": "UniWire (ex-CryptoChill)",
+      "url": "https://uniwire.com",
       "fee_pct": 1,
-      "fee_note": "Flat 1% on incoming transactions",
+      "fee_note": "Flat rate on incoming volume; percentage unpublished since UniWire rebrand",
       "custody": "custodial",
       "kyc": "optional",
       "coins": 20,
-      "settlement_fiat": false,
+      "settlement_fiat": true,
       "lightning": true,
       "founded": 2018,
-      "notable": "Gateway + custodial wallets, API, Lightning",
+      "notable": "CryptoChill rebranded to UniWire; MPC wallets, crypto-to-fiat off-ramp",
       "verified": false,
-      "source_url": "https://cryptochill.com",
+      "source_url": "https://uniwire.com",
       "study_cohort": false
     },
     {
@@ -1338,8 +1338,8 @@
     {
       "name": "Gate Pay",
       "url": "https://www.gate.com/pay",
-      "fee_pct": 0,
-      "fee_note": "Advertised low/zero; tiers unpublished",
+      "fee_pct": 0.5,
+      "fee_note": "0.5% transaction fee; 100+ fiat currencies, T+0 settlement",
       "custody": "custodial",
       "kyc": "required",
       "coins": 300,
@@ -1347,7 +1347,7 @@
       "lightning": false,
       "founded": 2021,
       "notable": "Gate.io exchange merchant acceptance, 300+ coins",
-      "verified": false,
+      "verified": true,
       "source_url": "https://www.gate.com/pay",
       "study_cohort": false
     },
@@ -1445,6 +1445,22 @@
       "notable": "Enterprise acquirer crypto acceptance, 200+ markets",
       "verified": false,
       "source_url": "https://www.nuvei.com/solutions/crypto-digital-assets",
+      "study_cohort": false
+    },
+    {
+      "name": "PayRequest",
+      "url": "https://payrequest.io",
+      "fee_pct": 2.0,
+      "fee_note": "2% per payment, capped at EUR 25; crypto via USDC on-chain",
+      "custody": "custodial",
+      "kyc": "none",
+      "coins": 1,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2020,
+      "notable": "Hybrid fiat+crypto payment links (Stripe/PayPal/USDC) for creators and SMBs",
+      "verified": true,
+      "source_url": "https://payrequest.io",
       "study_cohort": false
     }
   ]
