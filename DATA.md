@@ -1,6 +1,6 @@
 # Crypto Payment Gateways 2026: full table
 
-87 gateways, v1.3.0, updated 2026-09-03. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
+87 gateways, v1.3.1, updated 2026-09-13. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
 
 An asterisk on the fee marks rows where the fee could not be confirmed on an official pricing page (`verified=false`). `study` marks the 50-gateway cohort of the published August 2026 study.
 
