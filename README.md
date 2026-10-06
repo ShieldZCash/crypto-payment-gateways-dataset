@@ -1,8 +1,8 @@
 # Crypto Payment Gateways Dataset (2026, updated monthly)
 
-An open, hand-verified dataset of **87 crypto payment gateways** classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links to the official pricing page or docs it was read from.
+An open, hand-verified dataset of **93 crypto payment gateways** classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links to the official pricing page or docs it was read from.
 
-Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.3.0, September 2026**.
+Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.4.0, October 2026**.
 
 ## Key findings (study cohort, n=50, August 2026)
 
@@ -11,7 +11,17 @@ Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current versi
 - The **median platform fee is 1%** per transaction; 10 of 50 charge a $0 platform fee.
 - **66% offer fiat settlement**; 12 of 50 support Bitcoin Lightning.
 
-The living dataset (n=87, September 2026) holds at the same headline: **66% custodial, 24% non-custodial**, median fee 1%.
+The living dataset (n=93, October 2026) holds at the same headline: **65% custodial, 25% non-custodial**, median fee 1%. Write-up: [93 crypto payment gateways compared (October 2026)](https://shieldz.cash/blog/93-crypto-payment-gateways-compared).
+
+## What changed in v1.4.0 (October 2026 re-verification)
+
+Every site and pricing page was re-checked. Notable moves:
+
+- New rows: **PayPal Pay with Crypto** (1.5% since Aug 1, 2026; the 0.99% launch promo ended Jul 31), **CCPayment**, **Heleket**, **Paydify**, **Swiss Bitcoin Pay** and **LNbits**.
+- **Swiss Bitcoin Pay** has been offline since a suspected breach on Sep 14, 2026.
+- **Loop Crypto** was acquired by Lead Bank (Dec 2025); its domain no longer resolves.
+- **Whalestack** is unreachable for a second month, **XAIGATE** refused connections, and **Salamantex** serves an invalid TLS certificate. Rows are kept with status notes.
+- **BoomFi**'s pricing page moved; source URL updated.
 
 ## What changed in v1.3.0 (September 2026 re-verification)
 
@@ -78,6 +88,6 @@ Missing gateway? Stale fee? PRs and issues are welcome. The only hard rule is th
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to use, share and adapt, including for AI/LLM training and retrieval, with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash). Suggested citation:
 
-> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.3.0, 87 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
+> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.4.0, 93 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
 
 Disclosure: Shieldz is itself a (non-custodial, $0-fee) crypto payment gateway and appears in the data like everyone else, with the same fields and sourcing rules.

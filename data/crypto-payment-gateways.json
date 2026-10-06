@@ -1,11 +1,11 @@
 {
   "dataset": "Crypto Payment Gateways 2026",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "publisher": "Shieldz",
   "publisher_url": "https://shieldz.cash",
   "canonical": "https://shieldz.cash/blog/custody-gap-crypto-payment-gateways",
   "published": "2026-08-20",
-  "updated": "2026-09-13",
+  "updated": "2026-10-07",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "methodology": "Classification of crypto payment gateways by published custody model, per-transaction fee, KYC requirement, coin coverage, fiat settlement and Lightning support, from provider pricing pages and docs as of August 2026. The published study (study_cohort=true) covers 50 gateways; this is a living dataset that also lists additional verified gateways (study_cohort=false). Rows with verified=false could not have their fee confirmed on an official page. Custody is an editorial classification based on each provider docs.",
@@ -26,9 +26,9 @@
     "study_cohort": "true = part of the published 50-gateway August 2026 study; false = additional gateway in the living dataset"
   },
   "counts": {
-    "total": 87,
+    "total": 93,
     "study_cohort": 50,
-    "additional": 37
+    "additional": 43
   },
   "summary": {
     "study_cohort": {
@@ -51,23 +51,23 @@
       "verified": 43
     },
     "full_dataset": {
-      "n": 87,
-      "custodial": 57,
-      "non_custodial": 21,
-      "self_hosted": 4,
+      "n": 93,
+      "custodial": 60,
+      "non_custodial": 23,
+      "self_hosted": 5,
       "hybrid": 5,
-      "pct_custodial": 66,
-      "pct_non_custodial": 24,
-      "kyc_required": 53,
-      "kyc_optional": 9,
-      "kyc_none": 25,
-      "pct_kyc_required": 61,
-      "median_fee_pct": 1.0,
-      "zero_platform_fee": 18,
-      "fiat_settlement": 60,
-      "pct_fiat_settlement": 69,
-      "lightning": 16,
-      "verified": 60
+      "pct_custodial": 65,
+      "pct_non_custodial": 25,
+      "kyc_required": 55,
+      "kyc_optional": 10,
+      "kyc_none": 28,
+      "pct_kyc_required": 59,
+      "median_fee_pct": 1,
+      "zero_platform_fee": 20,
+      "fiat_settlement": 62,
+      "pct_fiat_settlement": 67,
+      "lightning": 18,
+      "verified": 65
     }
   },
   "gateways": [
@@ -466,7 +466,7 @@
       "settlement_fiat": true,
       "lightning": true,
       "founded": 2019,
-      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements; site unreachable Sep 2026",
+      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements; site unreachable Sep and Oct 2026",
       "verified": false,
       "source_url": "https://www.whalestack.com/en/pricing",
       "study_cohort": true
@@ -516,7 +516,7 @@
       "founded": 2022,
       "notable": "Non-custodial gateway with subscriptions and off-ramp",
       "verified": true,
-      "source_url": "https://docs.boomfi.xyz/docs/pricing-and-fees",
+      "source_url": "https://docs.boomfi.xyz/pricing/fees-and-pricing",
       "study_cohort": true
     },
     {
@@ -530,7 +530,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2021,
-      "notable": "Crypto autopay subscriptions with Stripe integration; site unreachable Sep 2026",
+      "notable": "Crypto autopay subscriptions; acquired by Lead Bank Dec 2025, domain no longer resolves as of Oct 2026",
       "verified": false,
       "source_url": "https://www.loopcrypto.xyz",
       "study_cohort": true
@@ -818,7 +818,7 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2020,
-      "notable": "Domain seized by the FBI in Operation Talent; offline as of Sep 2026",
+      "notable": "Domain seized by the FBI in Operation Talent; offline Sep and Oct 2026",
       "verified": false,
       "source_url": "https://sellix.io",
       "study_cohort": true
@@ -930,7 +930,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2023,
-      "notable": "Very low fee; WooCommerce/PrestaShop plugins",
+      "notable": "Very low fee; WooCommerce/PrestaShop plugins; site refused connections at Oct 2026 check",
       "verified": true,
       "source_url": "https://www.xaigate.com/low-fee-crypto-payment-gateway/",
       "study_cohort": false
@@ -1186,7 +1186,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2017,
-      "notable": "Austrian POS terminals, crypto or EUR at checkout",
+      "notable": "Austrian POS terminals, crypto or EUR at checkout; site serving an invalid TLS certificate Oct 2026",
       "verified": false,
       "source_url": "https://salamantex.com/en/salamantex-crypto-payment-service",
       "study_cohort": false
@@ -1461,6 +1461,102 @@
       "notable": "Hybrid fiat+crypto payment links (Stripe/PayPal/USDC) for creators and SMBs",
       "verified": true,
       "source_url": "https://payrequest.io",
+      "study_cohort": false
+    },
+    {
+      "name": "PayPal Pay with Crypto",
+      "url": "https://www.paypal.com/us/business/paypal-business-fees",
+      "fee_pct": 1.5,
+      "fee_note": "1.5% from Aug 1, 2026 (0.99% launch promo ended Jul 31, 2026); US merchants",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 100,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2025,
+      "notable": "100+ coins converted to USD or PYUSD at checkout for US PayPal merchants",
+      "verified": true,
+      "source_url": "https://www.paypal.com/us/business/paypal-business-fees",
+      "study_cohort": false
+    },
+    {
+      "name": "CCPayment",
+      "url": "https://ccpayment.com",
+      "fee_pct": 0.2,
+      "fee_note": "from 0.2% at $10M+/mo; lower tiers unpublished; 0.6% auto-swap, 0.5% auto-withdrawal",
+      "custody": "custodial",
+      "kyc": "optional",
+      "coins": 900,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2022,
+      "notable": "FinCEN-registered MSB; 900+ tokens across 100+ chains",
+      "verified": false,
+      "source_url": "https://ccpayment.com/en/fees",
+      "study_cohort": false
+    },
+    {
+      "name": "Heleket",
+      "url": "https://heleket.com",
+      "fee_pct": 0.4,
+      "fee_note": "from 0.4% by plan and volume; no setup or monthly fee",
+      "custody": "custodial",
+      "kyc": "none",
+      "coins": 15,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2025,
+      "notable": "Email-only signup, no corporate documents; launched 2025",
+      "verified": true,
+      "source_url": "https://heleket.com/crypto-processing",
+      "study_cohort": false
+    },
+    {
+      "name": "Paydify",
+      "url": "https://www.paydify.com",
+      "fee_pct": 0,
+      "fee_note": "no transaction fees 'for a limited time'; KYB terms unpublished",
+      "custody": "non-custodial",
+      "kyc": "required",
+      "coins": 2,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2025,
+      "notable": "Bitget Wallet partner; any wallet pays, USDC/USDT settles direct to merchant wallet",
+      "verified": true,
+      "source_url": "https://www.paydify.com/resources",
+      "study_cohort": false
+    },
+    {
+      "name": "Swiss Bitcoin Pay",
+      "url": "https://swiss-bitcoin-pay.ch",
+      "fee_pct": 1,
+      "fee_note": "1% kept in bitcoin, 1.5% auto-converted to CHF/EUR",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 1,
+      "settlement_fiat": true,
+      "lightning": true,
+      "founded": 2022,
+      "notable": "Lightning POS (Lugano); servers offline since a Sep 14, 2026 breach, no reopening date",
+      "verified": true,
+      "source_url": "https://swiss-bitcoin-pay.ch/",
+      "study_cohort": false
+    },
+    {
+      "name": "LNbits",
+      "url": "https://lnbits.com",
+      "fee_pct": 0,
+      "fee_note": "free open-source software; hosted plan priced separately",
+      "custody": "self-hosted",
+      "kyc": "none",
+      "coins": 1,
+      "settlement_fiat": false,
+      "lightning": true,
+      "founded": 2020,
+      "notable": "Open-source Lightning accounts system with POS, checkout and paywall extensions",
+      "verified": true,
+      "source_url": "https://github.com/lnbits/lnbits",
       "study_cohort": false
     }
   ]
