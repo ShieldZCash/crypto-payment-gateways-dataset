@@ -1,6 +1,6 @@
 # Crypto Payment Gateways 2026: full table
 
-93 gateways, v1.4.0, updated 2026-10-07. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
+94 gateways, v1.4.0, updated 2026-10-07. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
 
 An asterisk on the fee marks rows where the fee could not be confirmed on an official pricing page (`verified=false`). `study` marks the 50-gateway cohort of the published August 2026 study.
 
@@ -19,6 +19,7 @@ An asterisk on the fee marks rows where the fee could not be confirmed on an off
 | [KuCoin Pay](https://www.kucoin.com/pay) | 0\* | custodial | required | 50 | yes | no | 2025 | no | Exchange merchant tool, off-chain internal settlement |
 | [LNbits](https://lnbits.com) | 0 | self-hosted | none | 1 | no | yes | 2020 | no | Open-source Lightning accounts system with POS, checkout and paywall extensions |
 | [MyCryptoCheckout](https://mycryptocheckout.com) | 0 | non-custodial | none | 100 | no | no | 2017 | yes | WordPress plugin, direct wallet-to-wallet payments |
+| [OpenReceive](https://openreceive.org) | 0 | self-hosted | none | 5 | no | yes | 2026 | no | Runs inside the merchant's own app and pays the merchant's wallet over Lightning through a receive-only NWC code |
 | [Paydify](https://www.paydify.com) | 0 | non-custodial | required | 2 | no | no | 2025 | no | Bitget Wallet partner; any wallet pays, USDC/USDT settles direct to merchant wallet |
 | [PayRam](https://www.payram.com) | 0 | self-hosted | none | 20 | no | no | 2023 | no | Self-hosted non-custodial gateway, iGaming-popular |
 | [Request Finance](https://www.request.finance) | 0 | non-custodial | optional | 100 | yes | no | 2020 | yes | Crypto invoicing, payroll and AP/AR suite |
