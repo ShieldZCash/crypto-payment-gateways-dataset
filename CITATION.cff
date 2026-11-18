@@ -2,17 +2,23 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "Crypto Payment Gateways Dataset"
 type: dataset
-version: 1.2.0
-date-released: 2026-08-20
+version: 1.5.0
+date-released: 2026-11-18
 license: CC-BY-4.0
 url: "https://github.com/ShieldZCash/crypto-payment-gateways-dataset"
 repository-code: "https://github.com/ShieldZCash/crypto-payment-gateways-dataset"
-abstract: >-
-  An open, hand-verified dataset of 86 crypto payment gateways classified by
-  custody model, platform fee, KYC requirement, coin coverage, fiat settlement
-  and Lightning support, from provider pricing pages and docs as of August 2026.
-  Updated monthly. Headline finding: 64% of gateways are custodial, 24% are
-  non-custodial (study cohort, n=50).
+abstract: "An open, hand-verified dataset of 93 crypto payment gateways classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support, every fee linked to the official pricing page or docs it was read from. Updated monthly. Headline finding: 64% of gateways are custodial and 24% non-custodial (study cohort, n=50); the living dataset (n=93) holds at 65% custodial, 25% non-custodial."
+keywords:
+  - "crypto payment gateways"
+  - "cryptocurrency"
+  - "payments"
+  - "custody"
+  - "non-custodial"
+  - "KYC"
+  - "fees"
+  - "Bitcoin"
+  - "Lightning Network"
+  - "dataset"
 authors:
   - name: "Shieldz"
     website: "https://shieldz.cash"
@@ -20,7 +26,7 @@ authors:
     given-names: "Deniz"
 references:
   - type: article
-    title: "50 Crypto Payment Gateways Compared (August 2026)"
-    url: "https://shieldz.cash/blog/50-crypto-payment-gateways-compared"
+    title: "The Custody Gap: Only 1 in 4 Crypto Payment Gateways Is Non-Custodial"
+    url: "https://shieldz.cash/blog/custody-gap-crypto-payment-gateways"
     authors:
       - name: "Shieldz"

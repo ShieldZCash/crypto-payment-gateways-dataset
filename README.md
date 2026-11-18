@@ -2,7 +2,7 @@
 
 An open, hand-verified dataset of **93 crypto payment gateways** classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links to the official pricing page or docs it was read from.
 
-Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.4.0, October 2026**.
+Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current version: **v1.5.0, November 2026**.
 
 ## Key findings (study cohort, n=50, August 2026)
 
@@ -11,7 +11,25 @@ Maintained by [Shieldz](https://shieldz.cash) and updated monthly. Current versi
 - The **median platform fee is 1%** per transaction; 10 of 50 charge a $0 platform fee.
 - **66% offer fiat settlement**; 12 of 50 support Bitcoin Lightning.
 
-The living dataset (n=93, October 2026) holds at the same headline: **65% custodial, 25% non-custodial**, median fee 1%. Write-up: [93 crypto payment gateways compared (October 2026)](https://shieldz.cash/blog/93-crypto-payment-gateways-compared).
+The living dataset (n=93, November 2026) holds at the same headline: **65% custodial, 25% non-custodial**, median fee 1%. Write-up: [93 crypto payment gateways compared (November 2026)](https://shieldz.cash/blog/93-crypto-payment-gateways-compared-november-2026).
+
+## What changed in v1.5.0 (November 2026 re-verification)
+
+Every source page was fetched again on 18 Nov 2026 (plain HTTP plus a real browser for pages behind bot checks), and every fee was compared with the recorded figure. Notable moves:
+
+- **Plisio** suspended payments after a hack around 6-8 Nov 2026; merchants report drained wallets and the domain no longer resolves. Marked unverified.
+- **Cryptomus** and **Heleket** were sanctioned by the UK on 8 Oct 2026 (designated together under their owner, Xeltox Enterprises). heleket.com no longer resolves; Heleket marked unverified.
+- **DePay** announced it will permanently shut down on 31 Dec 2026.
+- **PayGate.to** now states **1%** flat (was recorded as 1.5%).
+- **Blockonomics**: the free allowance is now the first **10** payments (was 20).
+- **Paymento** replaced its free-volume tier with a $15 starting credit; 0.5% per payment unchanged.
+- **Request Finance**: bank off-ramp is 1% on Starter and 0.5% on Growth/Pro, plus a fixed $10 local / $30 SWIFT fee.
+- **xMoney**: 1% for EUR/GBP/USDC settlement, 1.5% for USD/CHF/RON.
+- **Sphere**, **Crypto.com Pay** and **Strike Business** no longer publish the recorded fee on an official page; kept with notes, marked unverified.
+- **Solana Pay** docs moved to solana.com; solanapay.com and **IVPAY**'s domain no longer resolve. **XAIGATE**, **Whalestack**, **Salamantex**, **Sellix** and **Loop Crypto** remain unreachable.
+- Source URLs refreshed for Binance Pay, UniPayment, Request Finance, xMoney, Blockonomics, Crypto.com Pay and Strike.
+
+Net effect: verified rows 65 → 59; the headline (65% custodial, 25% non-custodial, median fee 1%) is unchanged.
 
 ## What changed in v1.4.0 (October 2026 re-verification)
 
@@ -88,6 +106,6 @@ Missing gateway? Stale fee? PRs and issues are welcome. The only hard rule is th
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to use, share and adapt, including for AI/LLM training and retrieval, with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash). Suggested citation:
 
-> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.4.0, 93 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
+> Shieldz (2026). *Crypto Payment Gateways Dataset* (v1.5.0, 93 gateways). https://github.com/ShieldZCash/crypto-payment-gateways-dataset (study write-up: https://shieldz.cash/blog/50-crypto-payment-gateways-compared)
 
 Disclosure: Shieldz is itself a (non-custodial, $0-fee) crypto payment gateway and appears in the data like everyone else, with the same fields and sourcing rules.

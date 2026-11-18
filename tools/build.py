@@ -2,8 +2,8 @@
 """Rebuild everything derived from data/crypto-payment-gateways.json.
 
 Edit ONLY the `gateways` array (and bump `version`/`updated`), then run this.
-It recomputes `counts` and `summary.full_dataset`, and regenerates the CSV and
-DATA.md. `summary.study_cohort` is frozen: it is the published August 2026
+It recomputes `counts` and `summary.full_dataset`, and regenerates the CSV,
+DATA.md and the citation metadata (CITATION.cff, .zenodo.json). `summary.study_cohort` is frozen: it is the published August 2026
 study (n=50) and is never recomputed.
 """
 import csv
@@ -77,4 +77,62 @@ for g in rows:
     )
 lines.append("")
 (root / "DATA.md").write_text("\n".join(lines))
-print(f"built: {n} gateways -> JSON summary, CSV, DATA.md")
+
+# Citation metadata. Zenodo reads .zenodo.json on each GitHub release and mints
+# a new DOI version; GitHub's "Cite this repository" reads CITATION.cff.
+fd = d["summary"]["full_dataset"]
+sc = d["summary"]["study_cohort"]
+repo = "https://github.com/ShieldZCash/crypto-payment-gateways-dataset"
+title = "Crypto Payment Gateways Dataset"
+abstract = (
+    f"An open, hand-verified dataset of {n} crypto payment gateways classified by custody model, "
+    f"platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support, every fee "
+    f"linked to the official pricing page or docs it was read from. Updated monthly. "
+    f"Headline finding: {sc['pct_custodial']}% of gateways are custodial and {sc['pct_non_custodial']}% "
+    f"non-custodial (study cohort, n={sc['n']}); the living dataset (n={n}) holds at "
+    f"{fd['pct_custodial']}% custodial, {fd['pct_non_custodial']}% non-custodial."
+)
+keywords = ["crypto payment gateways", "cryptocurrency", "payments", "custody", "non-custodial",
+            "KYC", "fees", "Bitcoin", "Lightning Network", "dataset"]
+(root / "CITATION.cff").write_text(
+    "cff-version: 1.2.0\n"
+    'message: "If you use this dataset, please cite it as below."\n'
+    f'title: "{title}"\n'
+    "type: dataset\n"
+    f"version: {d['version']}\n"
+    f"date-released: {d['updated']}\n"
+    "license: CC-BY-4.0\n"
+    f'url: "{repo}"\n'
+    f'repository-code: "{repo}"\n'
+    f"abstract: {json.dumps(abstract)}\n"
+    "keywords:\n" + "".join(f"  - {json.dumps(k)}\n" for k in keywords) +
+    "authors:\n"
+    '  - name: "Shieldz"\n'
+    '    website: "https://shieldz.cash"\n'
+    '  - family-names: "Yanbollu"\n'
+    '    given-names: "Deniz"\n'
+    "references:\n"
+    "  - type: article\n"
+    '    title: "The Custody Gap: Only 1 in 4 Crypto Payment Gateways Is Non-Custodial"\n'
+    f'    url: "{d["canonical"]}"\n'
+    "    authors:\n"
+    '      - name: "Shieldz"\n'
+)
+zenodo = {
+    "title": f"{title} (v{d['version']}, {n} gateways)",
+    "upload_type": "dataset",
+    "version": d["version"],
+    "publication_date": d["updated"],
+    "description": f"<p>{abstract}</p><p>Methodology: {d['methodology']}</p>"
+                   f"<p>Write-up and live JSON/CSV: <a href=\"{d['canonical']}\">{d['canonical']}</a></p>",
+    "creators": [{"name": "Yanbollu, Deniz", "affiliation": "Shieldz"}],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "keywords": keywords,
+    "related_identifiers": [
+        {"identifier": d["canonical"], "relation": "isDocumentedBy", "resource_type": "publication-article"},
+        {"identifier": repo, "relation": "isSupplementTo", "resource_type": "dataset"},
+    ],
+}
+(root / ".zenodo.json").write_text(json.dumps(zenodo, indent=2, ensure_ascii=False) + "\n")
+print(f"built: {n} gateways -> JSON summary, CSV, DATA.md, CITATION.cff, .zenodo.json")

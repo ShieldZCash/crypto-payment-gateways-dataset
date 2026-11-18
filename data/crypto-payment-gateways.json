@@ -1,11 +1,11 @@
 {
   "dataset": "Crypto Payment Gateways 2026",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "publisher": "Shieldz",
   "publisher_url": "https://shieldz.cash",
   "canonical": "https://shieldz.cash/blog/custody-gap-crypto-payment-gateways",
   "published": "2026-08-20",
-  "updated": "2026-10-07",
+  "updated": "2026-11-18",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "methodology": "Classification of crypto payment gateways by published custody model, per-transaction fee, KYC requirement, coin coverage, fiat settlement and Lightning support, from provider pricing pages and docs as of August 2026. The published study (study_cohort=true) covers 50 gateways; this is a living dataset that also lists additional verified gateways (study_cohort=false). Rows with verified=false could not have their fee confirmed on an official page. Custody is an editorial classification based on each provider docs.",
@@ -67,7 +67,7 @@
       "fiat_settlement": 62,
       "pct_fiat_settlement": 67,
       "lightning": 18,
-      "verified": 65
+      "verified": 59
     }
   },
   "gateways": [
@@ -203,7 +203,7 @@
       "name": "Blockonomics",
       "url": "https://www.blockonomics.co",
       "fee_pct": 1,
-      "fee_note": "1% per transaction; first 20 free",
+      "fee_note": "1% per payment; first 10 payments free",
       "custody": "non-custodial",
       "kyc": "none",
       "coins": 3,
@@ -212,7 +212,7 @@
       "founded": 2015,
       "notable": "Direct-to-wallet Bitcoin payments with no KYC",
       "verified": true,
-      "source_url": "https://www.blockonomics.co",
+      "source_url": "https://www.blockonomics.co/pricing",
       "study_cohort": true
     },
     {
@@ -258,8 +258,8 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2018,
-      "notable": "No-KYC signup with a single flat 0.5% fee",
-      "verified": true,
+      "notable": "No-KYC signup with a single flat 0.5% fee; payments suspended after a hack around 6-8 Nov 2026, merchant wallets reported drained, domain not resolving at the Nov 2026 check",
+      "verified": false,
       "source_url": "https://plisio.net/pricing",
       "study_cohort": true
     },
@@ -274,7 +274,7 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2022,
-      "notable": "Negotiable fees; popular with high-risk and SaaS merchants",
+      "notable": "Negotiable fees; popular with high-risk and SaaS merchants. UK-sanctioned 8 Oct 2026 (owner Xeltox Enterprises, alias Cryptomus/Heleket): asset freeze and payment-processing ban for UK persons",
       "verified": true,
       "source_url": "https://cryptomus.com/fees/payment",
       "study_cohort": true
@@ -292,7 +292,7 @@
       "founded": 2021,
       "notable": "Zero-fee payments inside the Binance ecosystem",
       "verified": true,
-      "source_url": "https://pay.binance.com",
+      "source_url": "https://www.binance.com/en/support/faq/binance-pay-fees-6ff1944867e54b9a9576bce3109c7f7a",
       "study_cohort": true
     },
     {
@@ -331,7 +331,7 @@
       "name": "xMoney",
       "url": "https://www.xmoney.com",
       "fee_pct": 1,
-      "fee_note": "1% flat with instant fiat settlement",
+      "fee_note": "1% for EUR, GBP and USDC settlement; 1.5% for USD, CHF and RON",
       "custody": "custodial",
       "kyc": "required",
       "coins": 10,
@@ -340,7 +340,7 @@
       "founded": 2017,
       "notable": "Formerly Utrust; MiCA-aligned EU crypto payments",
       "verified": true,
-      "source_url": "https://www.xmoney.com",
+      "source_url": "https://www.xmoney.com/luxury-crypto-payments",
       "study_cohort": true
     },
     {
@@ -466,7 +466,7 @@
       "settlement_fiat": true,
       "lightning": true,
       "founded": 2019,
-      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements; site unreachable Sep and Oct 2026",
+      "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements; site unreachable Sep-Nov 2026",
       "verified": false,
       "source_url": "https://www.whalestack.com/en/pricing",
       "study_cohort": true
@@ -530,7 +530,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2021,
-      "notable": "Crypto autopay subscriptions; acquired by Lead Bank Dec 2025, domain no longer resolves as of Oct 2026",
+      "notable": "Crypto autopay subscriptions; acquired by Lead Bank Dec 2025, domain no longer resolves as of Oct and Nov 2026",
       "verified": false,
       "source_url": "https://www.loopcrypto.xyz",
       "study_cohort": true
@@ -555,7 +555,7 @@
       "name": "Request Finance",
       "url": "https://www.request.finance",
       "fee_pct": 0,
-      "fee_note": "SaaS plans; 0.95-1.5% off-ramp",
+      "fee_note": "Free plan has no payment fee; paid plans $50-600/mo; bank off-ramp 1% (Starter) or 0.5% (Growth, Pro) + $10 local / $30 SWIFT; stablecoin payouts free",
       "custody": "non-custodial",
       "kyc": "optional",
       "coins": 100,
@@ -564,7 +564,7 @@
       "founded": 2020,
       "notable": "Crypto invoicing, payroll and AP/AR suite",
       "verified": true,
-      "source_url": "https://www.request.finance",
+      "source_url": "https://www.requestfinance.com/pricing",
       "study_cohort": true
     },
     {
@@ -578,7 +578,7 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2020,
-      "notable": "Web3 payments with on-the-fly token conversion",
+      "notable": "Web3 payments with on-the-fly token conversion; DePay announced it will permanently discontinue all services on 31 Dec 2026",
       "verified": true,
       "source_url": "https://depay.com/pricing",
       "study_cohort": true
@@ -587,7 +587,7 @@
       "name": "Sphere",
       "url": "https://spherepay.co",
       "fee_pct": 0.5,
-      "fee_note": "0.5% + $0.05 per transaction",
+      "fee_note": "0.5% + $0.05 per transaction (third-party figure; spherepay.co/pricing now 404, terms say fees are disclosed before use)",
       "custody": "custodial",
       "kyc": "required",
       "coins": 3,
@@ -595,7 +595,7 @@
       "lightning": false,
       "founded": 2022,
       "notable": "Solana-born stablecoin ramps with ACH/SEPA/PIX rails",
-      "verified": true,
+      "verified": false,
       "source_url": "https://spherepay.co",
       "study_cohort": true
     },
@@ -635,7 +635,7 @@
       "name": "Strike Business",
       "url": "https://strike.me/business/",
       "fee_pct": 0,
-      "fee_note": "0% processing; 0.49-1.29% fiat conversion",
+      "fee_note": "No acceptance fee published; bitcoin conversion 0.89% down to 0.49% by monthly volume plus ~0.21% spread",
       "custody": "custodial",
       "kyc": "required",
       "coins": 2,
@@ -643,8 +643,8 @@
       "lightning": true,
       "founded": 2020,
       "notable": "Lightning payments pioneer",
-      "verified": true,
-      "source_url": "https://strike.me/business/",
+      "verified": false,
+      "source_url": "https://strike.me/int/en/support/what-are-the-trading-fees/",
       "study_cohort": true
     },
     {
@@ -722,9 +722,9 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2022,
-      "notable": "Open-source direct merchant payment protocol",
+      "notable": "Open-source direct merchant payment protocol; docs moved to solana.com, solanapay.com not resolving at the Nov 2026 check",
       "verified": true,
-      "source_url": "https://solanapay.com/",
+      "source_url": "https://solana.com/docs/tools/solana-pay",
       "study_cohort": true
     },
     {
@@ -754,7 +754,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2018,
-      "notable": "Crypto POS and vending-machine payments",
+      "notable": "Crypto POS and vending-machine payments; IVPAY token delisted, ivpay.io DNS not resolving at the Nov 2026 check",
       "verified": false,
       "source_url": "https://ivpay.io/",
       "study_cohort": true
@@ -818,7 +818,7 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2020,
-      "notable": "Domain seized by the FBI in Operation Talent; offline Sep and Oct 2026",
+      "notable": "Domain seized by the FBI in Operation Talent; offline Sep-Nov 2026",
       "verified": false,
       "source_url": "https://sellix.io",
       "study_cohort": true
@@ -891,7 +891,7 @@
       "name": "Paymento",
       "url": "https://paymento.io",
       "fee_pct": 0.5,
-      "fee_note": "Free up to $20k volume, then 0.5%",
+      "fee_note": "0.5% per successful payment (0.5% + $0.20 with the embedded non-custodial wallet); $15 free credit for new accounts; no monthly fee",
       "custody": "non-custodial",
       "kyc": "none",
       "coins": 15,
@@ -930,8 +930,8 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2023,
-      "notable": "Very low fee; WooCommerce/PrestaShop plugins; site refused connections at Oct 2026 check",
-      "verified": true,
+      "notable": "Very low fee; WooCommerce/PrestaShop plugins; site refused connections at the Oct and Nov 2026 checks; its terms describe a custodial settlement account despite the non-custodial claim",
+      "verified": false,
       "source_url": "https://www.xaigate.com/low-fee-crypto-payment-gateway/",
       "study_cohort": false
     },
@@ -954,8 +954,8 @@
     {
       "name": "PayGate.to",
       "url": "https://paygate.to",
-      "fee_pct": 1.5,
-      "fee_note": "1.5% flat + blockchain fees",
+      "fee_pct": 1,
+      "fee_note": "1% flat + blockchain fees",
       "custody": "non-custodial",
       "kyc": "none",
       "coins": 50,
@@ -1186,7 +1186,7 @@
       "settlement_fiat": true,
       "lightning": false,
       "founded": 2017,
-      "notable": "Austrian POS terminals, crypto or EUR at checkout; site serving an invalid TLS certificate Oct 2026",
+      "notable": "Austrian POS terminals, crypto or EUR at checkout; site serving an invalid TLS certificate Oct and Nov 2026",
       "verified": false,
       "source_url": "https://salamantex.com/en/salamantex-crypto-payment-service",
       "study_cohort": false
@@ -1236,7 +1236,7 @@
       "founded": 2020,
       "notable": "Hybrid fiat/crypto gateway for brokers and e-commerce",
       "verified": true,
-      "source_url": "https://unipayment.io",
+      "source_url": "https://unipayment.io/en/faq/",
       "study_cohort": false
     },
     {
@@ -1387,7 +1387,7 @@
       "name": "Crypto.com Pay",
       "url": "https://crypto.com/pay-merchant",
       "fee_pct": 0.5,
-      "fee_note": "Zero tx fee; 0.5% settlement fee",
+      "fee_note": "No transaction fee; a payout fee applies on settlement (0.5% in the 2022 launch terms, size no longer published)",
       "custody": "custodial",
       "kyc": "required",
       "coins": 20,
@@ -1395,8 +1395,8 @@
       "lightning": false,
       "founded": 2019,
       "notable": "Shopify-integrated acceptance, multi-fiat settlement",
-      "verified": true,
-      "source_url": "https://crypto.com/en/pay-merchant",
+      "verified": false,
+      "source_url": "https://pay-docs.crypto.com/",
       "study_cohort": false
     },
     {
@@ -1506,8 +1506,8 @@
       "settlement_fiat": false,
       "lightning": false,
       "founded": 2025,
-      "notable": "Email-only signup, no corporate documents; launched 2025",
-      "verified": true,
+      "notable": "Email-only signup, no corporate documents; launched 2025. UK-sanctioned 8 Oct 2026 (designated with Cryptomus under owner Xeltox Enterprises); heleket.com no longer resolved (NXDOMAIN) at the Nov 2026 check",
+      "verified": false,
       "source_url": "https://heleket.com/crypto-processing",
       "study_cohort": false
     },
