@@ -1,6 +1,6 @@
 # Crypto Payment Gateways 2026: full table
 
-93 gateways, v1.5.0, updated 2026-11-18. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
+94 gateways, v1.5.0, updated 2026-11-18. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
 
 An asterisk on the fee marks rows where the fee could not be confirmed on an official pricing page (`verified=false`). `study` marks the 50-gateway cohort of the published August 2026 study.
 
@@ -89,6 +89,7 @@ An asterisk on the fee marks rows where the fee could not be confirmed on an off
 | [DePay](https://depay.com) | 1.5 | non-custodial | none | 1000 | no | no | 2020 | yes | Web3 payments with on-the-fly token conversion; DePay announced it will permanently discontinue all services on 31 Dec 2026 |
 | [GoUrl](https://gourl.io) | 1.5 | non-custodial | none | 10 | no | no | 2014 | no | Open-source, direct-to-wallet, WordPress plugin |
 | [PayPal Pay with Crypto](https://www.paypal.com/us/business/paypal-business-fees) | 1.5 | custodial | required | 100 | yes | no | 2025 | no | 100+ coins converted to USD or PYUSD at checkout for US PayPal merchants |
+| [Plaxswap](https://plaxswap.com) | 1.5 | custodial | none | 16 | no | no | 2026 | no | Gateway payments land in a Plaxswap-held merchant balance; separate payment links pay straight to the merchant's address |
 | [Stripe (Pay with Crypto)](https://stripe.com/crypto) | 1.5 | custodial | required | 3 | yes | no | 2024 | yes | Renamed Stablecoin payments in 2026; USDC/USDP/USDG into the Stripe balance |
 | [Trybit (ex-CryptoCloud)](https://trybit.com) | 1.9\* | custodial | required | 40 | no | no | 2021 | yes | Rebranded to Trybit in 2026; auto-convert to USDT |
 | [Bit2Me Commerce](https://bit2me.com/suite/commerce) | 1.95 | custodial | required | 50 | yes | no | 2014 | no | Spanish exchange gateway, auto EUR to bank |
