@@ -26,9 +26,9 @@
     "study_cohort": "true = part of the published 50-gateway August 2026 study; false = additional gateway in the living dataset"
   },
   "counts": {
-    "total": 95,
+    "total": 96,
     "study_cohort": 50,
-    "additional": 45
+    "additional": 46
   },
   "summary": {
     "study_cohort": {
@@ -51,23 +51,23 @@
       "verified": 43
     },
     "full_dataset": {
-      "n": 95,
+      "n": 96,
       "custodial": 61,
       "non_custodial": 24,
-      "self_hosted": 5,
+      "self_hosted": 6,
       "hybrid": 5,
       "pct_custodial": 64,
       "pct_non_custodial": 25,
       "kyc_required": 55,
       "kyc_optional": 10,
-      "kyc_none": 30,
-      "pct_kyc_required": 58,
-      "median_fee_pct": 1,
-      "zero_platform_fee": 20,
+      "kyc_none": 31,
+      "pct_kyc_required": 57,
+      "median_fee_pct": 1.0,
+      "zero_platform_fee": 21,
       "fiat_settlement": 62,
       "pct_fiat_settlement": 65,
-      "lightning": 19,
-      "verified": 61
+      "lightning": 20,
+      "verified": 62
     }
   },
   "gateways": [
@@ -1589,6 +1589,22 @@
       "notable": "Pay links and API; payer pays from own wallet straight to the receiver's wallet, priced in 161 fiat currencies",
       "verified": true,
       "source_url": "https://send21.io/pricing",
+      "study_cohort": false
+    },
+    {
+      "name": "OpenReceive",
+      "url": "https://openreceive.org",
+      "fee_pct": 0,
+      "fee_note": "free open-source software (MIT), no processing fee; payments in USDT, USDC, ETH or SOL go through an optional swap provider, which shows the payer its own fee",
+      "custody": "self-hosted",
+      "kyc": "none",
+      "coins": 1,
+      "settlement_fiat": false,
+      "lightning": true,
+      "founded": 2026,
+      "notable": "Runs inside the merchant's own app and pays the merchant's wallet over Lightning through a receive-only NWC code",
+      "verified": true,
+      "source_url": "https://openreceive.org/",
       "study_cohort": false
     }
   ]
