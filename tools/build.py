@@ -124,7 +124,7 @@ zenodo = {
     "version": d["version"],
     "publication_date": d["updated"],
     "description": f"<p>{abstract}</p><p>Methodology: {d['methodology']}</p>"
-                   f"<p>Write-up and live JSON/CSV: <a href=\"{d['canonical']}\">{d['canonical']}</a></p>",
+                   f"<p>Write-up and live JSON/CSV: <a href=\"{d['canonical']}?utm_source=zenodo\">{d['canonical']}</a></p>",
     "creators": [{"name": "Yanbollu, Deniz", "affiliation": "Shieldz"}],
     "license": "cc-by-4.0",
     "access_right": "open",

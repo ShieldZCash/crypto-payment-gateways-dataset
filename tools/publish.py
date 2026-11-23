@@ -43,16 +43,18 @@ findings = (
     f"{fd['pct_non_custodial']}% non-custodial."
 )
 fields = "\n".join(f"| `{k}` | {v} |" for k, v in d["field_dictionary"].items())
-about = f"""An open, hand-verified dataset of **{n} crypto payment gateways** classified by custody model, \
+def about_for(src: str) -> str:
+    site = f"https://shieldz.cash/?utm_source={src}"
+    return f"""An open, hand-verified dataset of **{n} crypto payment gateways** classified by custody model, \
 platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support. Every fee figure links \
-to the official pricing page or docs it was read from. Maintained by [Shieldz](https://shieldz.cash) and \
+to the official pricing page or docs it was read from. Maintained by [Shieldz]({site}) and \
 updated monthly. Current version: **v{d['version']}**, updated {d['updated']}.
 
 ## Key findings
 
 {findings}
 
-Write-up and methodology: [{d['canonical']}]({d['canonical']})
+Write-up and methodology: [{d['canonical']}]({d['canonical']}?utm_source={src})
 
 ## Fields
 
@@ -72,7 +74,7 @@ to the provider's official page. This copy is refreshed with each monthly releas
 ## License and citation
 
 [CC BY 4.0]({d['license_url']}): free to use, share and adapt, including for AI/LLM training and retrieval, \
-with attribution to **Shieldz** and a link to [shieldz.cash](https://shieldz.cash).
+with attribution to **Shieldz** and a link to [shieldz.cash]({site}).
 
 > Shieldz ({d['updated'][:4]}). *Crypto Payment Gateways Dataset* (v{d['version']}, {n} gateways). {repo}
 
@@ -104,13 +106,13 @@ configs:
 
 # Crypto Payment Gateways Dataset
 
-{about}""")
+{about_for("huggingface")}""")
 
 (dist / "kaggle" / "dataset-metadata.json").write_text(json.dumps({
     "title": "Crypto Payment Gateways 2026",
     "id": f"{kaggle_user}/crypto-payment-gateways",
     "subtitle": f"{n} gateways: fees, custody, KYC, coins, fiat, Lightning",
-    "description": about,
+    "description": about_for("kaggle"),
     "isPrivate": False,
     "licenses": [{"name": "CC-BY-4.0"}],
     "keywords": ["finance", "currencies and foreign exchange", "business", "economics"],
