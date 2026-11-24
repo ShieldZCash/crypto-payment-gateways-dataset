@@ -7,7 +7,7 @@ date-released: 2026-11-18
 license: CC-BY-4.0
 url: "https://github.com/ShieldZCash/crypto-payment-gateways-dataset"
 repository-code: "https://github.com/ShieldZCash/crypto-payment-gateways-dataset"
-abstract: "An open, hand-verified dataset of 96 crypto payment gateways classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support, every fee linked to the official pricing page or docs it was read from. Updated monthly. Headline finding: 64% of gateways are custodial and 24% non-custodial (study cohort, n=50); the living dataset (n=96) holds at 64% custodial, 25% non-custodial."
+abstract: "An open, hand-verified dataset of 97 crypto payment gateways classified by custody model, platform fee, KYC requirement, coin coverage, fiat settlement and Lightning support, every fee linked to the official pricing page or docs it was read from. Updated monthly. Headline finding: 64% of gateways are custodial and 24% non-custodial (study cohort, n=50); the living dataset (n=97) holds at 63% custodial, 26% non-custodial."
 keywords:
   - "crypto payment gateways"
   - "cryptocurrency"

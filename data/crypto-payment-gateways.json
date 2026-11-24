@@ -26,9 +26,9 @@
     "study_cohort": "true = part of the published 50-gateway August 2026 study; false = additional gateway in the living dataset"
   },
   "counts": {
-    "total": 96,
+    "total": 97,
     "study_cohort": 50,
-    "additional": 46
+    "additional": 47
   },
   "summary": {
     "study_cohort": {
@@ -51,23 +51,23 @@
       "verified": 43
     },
     "full_dataset": {
-      "n": 96,
+      "n": 97,
       "custodial": 61,
-      "non_custodial": 24,
+      "non_custodial": 25,
       "self_hosted": 6,
       "hybrid": 5,
-      "pct_custodial": 64,
-      "pct_non_custodial": 25,
+      "pct_custodial": 63,
+      "pct_non_custodial": 26,
       "kyc_required": 55,
       "kyc_optional": 10,
-      "kyc_none": 31,
+      "kyc_none": 32,
       "pct_kyc_required": 57,
-      "median_fee_pct": 1.0,
-      "zero_platform_fee": 21,
+      "median_fee_pct": 1,
+      "zero_platform_fee": 22,
       "fiat_settlement": 62,
-      "pct_fiat_settlement": 65,
+      "pct_fiat_settlement": 64,
       "lightning": 20,
-      "verified": 62
+      "verified": 63
     }
   },
   "gateways": [
@@ -1605,6 +1605,22 @@
       "notable": "Runs inside the merchant's own app and pays the merchant's wallet over Lightning through a receive-only NWC code",
       "verified": true,
       "source_url": "https://openreceive.org/",
+      "study_cohort": false
+    },
+    {
+      "name": "FaradPay",
+      "url": "https://faradpay.com",
+      "fee_pct": 0,
+      "fee_note": "0% platform fee; standard blockchain network fees apply",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 350,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2022,
+      "notable": "0% fee payment gateway supporting 350+ cryptocurrencies with settlement to merchant payout wallet",
+      "verified": true,
+      "source_url": "https://faradpay.com/",
       "study_cohort": false
     }
   ]

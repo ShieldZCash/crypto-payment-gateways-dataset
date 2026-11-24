@@ -1,6 +1,6 @@
 # Crypto Payment Gateways 2026: full table
 
-96 gateways, v1.5.0, updated 2026-11-18. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
+97 gateways, v1.5.0, updated 2026-11-18. License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), attribution: [Shieldz](https://shieldz.cash). Canonical write-up: https://shieldz.cash/blog/custody-gap-crypto-payment-gateways
 
 An asterisk on the fee marks rows where the fee could not be confirmed on an official pricing page (`verified=false`). `study` marks the 50-gateway cohort of the published August 2026 study.
 
@@ -15,6 +15,7 @@ An asterisk on the fee marks rows where the fee could not be confirmed on an off
 | [Coinbase Payments](https://www.coinbase.com/payments) | 0 | hybrid | required | 1 | yes | no | 2025 | yes | Onchain USDC for Shopify merchants; distinct from Commerce |
 | [Coinify](https://www.coinify.com) | 0 | custodial | required | 20 | yes | no | 2014 | no | Danish processor, weekly EUR/BTC payouts |
 | [DV.net](https://dv.net) | 0 | self-hosted | none | 50 | no | no | 2023 | no | Open-source self-hosted, merchant owns wallets and seed |
+| [FaradPay](https://faradpay.com) | 0 | non-custodial | none | 350 | no | no | 2022 | no | 0% fee payment gateway supporting 350+ cryptocurrencies with settlement to merchant payout wallet |
 | [Kraken Pay](https://blog.kraken.com/product/kraken-pay) | 0 | custodial | required | 300 | yes | no | 2025 | no | Paylinks and Kraktag payments, 300+ assets |
 | [KuCoin Pay](https://www.kucoin.com/pay) | 0\* | custodial | required | 50 | yes | no | 2025 | no | Exchange merchant tool, off-chain internal settlement |
 | [LNbits](https://lnbits.com) | 0 | self-hosted | none | 1 | no | yes | 2020 | no | Open-source Lightning accounts system with POS, checkout and paywall extensions |
